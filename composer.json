@@ -24,7 +24,7 @@
     }
   ],
   "require": {
-    "php": ">=7.0",
+    "php": ">=7.1",
     "ext-xml": "*",
     "doctrine/collections": ">=1.5",
     "helppc/serializer": "^1.0"
