@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odpovedZverejneni xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <puvodniZprava>6570859</puvodniZprava>
+    <data>
+        <identifikator>
+            <idSmlouvy>112068</idSmlouvy>
+            <idVerze>125224</idVerze>
+        </identifikator>
+        <odkaz>https://testrs.gov.cz/smlouva/125224</odkaz>
+        <casZverejneni>2018-09-03T20:16:30+02:00</casZverejneni>
+        <smlouva>
+            <subjekt>
+                <datovaSchranka>unhfjvx</datovaSchranka>
+                <nazev>IS Datové schránky</nazev>
+                <ico>00272663</ico>
+                <adresa>Na Jízdárně 3025/12, 70200 Ostrava, CZ</adresa>
+            </subjekt>
+            <smluvniStrana>
+                <nazev>Pokusný subjekt</nazev>
+            </smluvniStrana>
+            <predmet>Testovaci smlouva</predmet>
+            <datumUzavreni>2018-09-03</datumUzavreni>
+            <hodnotaVcetneDph>650</hodnotaVcetneDph>
+        </smlouva>
+        <prilohy>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>testovaciDokument.pdf</nazevSouboru>
+            </priloha>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>testovaciDokument2.pdf</nazevSouboru>
+            </priloha>
+        </prilohy>
+    </data>
+    <potvrzeni>
+        <hash algoritmus="sha256">6e3edea7a730d61059c40d93d441e952bb97e10752ba03e4e50db125b72e2c44</hash>
+        <elektronickaZnacka>
+            J8fHfG+E2fskf0y5a9C2Uwan0uMNnW1XruP/Tz0I90sAdrpxmRTo1dDICDmGxGpZzBSAqDWFJ+ucvx0HRReJMGmyqaI3xmOA6oUpOcqc03DMn3o7RfBaDEMM2pOGg2Pndpdojm/Wvq1JDYos9PNpKfVecVRIFbH3h7auRDew4i9vHHr0uad5kWSen8ZXLs+kLByTPVgvEQRtNhETV1C4I2wNLIA1u1gZw0ZklQIygpCCUpt88ILdtOYxFGMdA+EG/QdsyMHKMB+omzwadXWvkPCVwjRCZ0Cslv3pWB6nlXME+EBHsECNl0zY/I1ik/bqKpHkxAWd139aM1VFFURsBg==
+        </elektronickaZnacka>
+        <informace>
+            <text>Proběhlo doplnění údajů subjektu nebo smluvní strany dle databáze ISDS.</text>
+        </informace>
+    </potvrzeni>
+</odpovedZverejneni>

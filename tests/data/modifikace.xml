@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modifikace xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <idSmlouvy>112088</idSmlouvy>
+    <smlouva>
+        <subjekt>
+            <datovaSchranka>unhfjvx</datovaSchranka>
+        </subjekt>
+        <smluvniStrana xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+            <nazev>Pokusný subjekt</nazev>
+        </smluvniStrana>
+        <predmet>Smlouva pozměněná</predmet>
+        <datumUzavreni>2018-09-03</datumUzavreni>
+        <hodnotaVcetneDph>650</hodnotaVcetneDph>
+    </smlouva>
+    <prilohy/>
+</modifikace>

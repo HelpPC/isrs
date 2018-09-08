@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zverejneni xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <smlouva>
+        <subjekt>
+            <datovaSchranka>unhfjvx</datovaSchranka>
+        </subjekt>
+        <smluvniStrana xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+            <nazev>Pokusný subjekt</nazev>
+        </smluvniStrana>
+        <predmet>Testovaci smlouva</predmet>
+        <datumUzavreni>2018-09-03</datumUzavreni>
+        <hodnotaVcetneDph>650</hodnotaVcetneDph>
+    </smlouva>
+    <prilohy>
+        <priloha xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+            <nazevSouboru>testovaciDokument.pdf</nazevSouboru>
+        </priloha>
+        <priloha xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+            <nazevSouboru>testovaciDokument2.pdf</nazevSouboru>
+        </priloha>
+    </prilohy>
+</zverejneni>

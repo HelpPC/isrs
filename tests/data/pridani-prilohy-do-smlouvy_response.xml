@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odpovedPridaniPrilohy xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <puvodniZprava>6570886</puvodniZprava>
+    <data>
+        <identifikator>
+            <idSmlouvy>111936</idSmlouvy>
+            <idVerze>125248</idVerze>
+        </identifikator>
+        <odkaz>https://testrs.gov.cz/smlouva/125248</odkaz>
+        <casZverejneni>2018-09-03T20:40:22+02:00</casZverejneni>
+        <smlouva>
+            <subjekt>
+                <datovaSchranka>unhfjvx</datovaSchranka>
+                <nazev>IS Datové schránky</nazev>
+                <ico>00272663</ico>
+                <adresa>Na Jízdárně 3025/12, 70200 Ostrava, CZ</adresa>
+            </subjekt>
+            <smluvniStrana>
+                <nazev>Pokusný subjekt</nazev>
+            </smluvniStrana>
+            <predmet>Smlouva pozměněná</predmet>
+            <datumUzavreni>2018-09-03</datumUzavreni>
+            <hodnotaVcetneDph>650</hodnotaVcetneDph>
+        </smlouva>
+        <prilohy>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>testovaciDokument.pdf</nazevSouboru>
+            </priloha>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>pridanaPriloha.pdf</nazevSouboru>
+            </priloha>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>pridanaPriloha2.pdf</nazevSouboru>
+            </priloha>
+        </prilohy>
+    </data>
+    <potvrzeni>
+        <hash algoritmus="sha256">a6f807ed36aa0d8423f280290f68008521bd03dc83909843a7693ba859a40c1b</hash>
+        <elektronickaZnacka>
+            wcEovd/9GLxCjGyIodic1++m48V8cEBWDiGH38KrByzqjrOTgupTOwk7BmbtE3CHU0LvsBjyRR0QCZ5bTL+Ve+QMWJWYQVobys88oINN+X+JiYJ8qamnvXdWLp3dZUykVsB4q9LnVRTuSpJHczO6SFt7oLYiq01/huMOK26mKKZoFRnZMGSm/E9IIQUURXJ21zBHRxNKXgNtcnb2TLuBEYN7zLl2BKdBZsnizYWcKxiqDJoBX3GHSe8o66xnptlYM703jGTvhF25kk5rJb/sCdIVWd5igd77PxXi4oybMT9IsY0xPiboggIc0KZmyacTd4f13PpEZja/vZzevN6nhw==
+        </elektronickaZnacka>
+    </potvrzeni>
+</odpovedPridaniPrilohy>

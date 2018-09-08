@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pridaniPrilohy xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <idSmlouvy>112088</idSmlouvy>
+    <prilohy>
+        <priloha xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+            <nazevSouboru>pridanaPriloha.pdf</nazevSouboru>
+        </priloha>
+        <priloha xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+            <nazevSouboru>pridanaPriloha2.pdf</nazevSouboru>
+        </priloha>
+    </prilohy>
+</pridaniPrilohy>

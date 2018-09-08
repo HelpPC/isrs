@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chyba xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <puvodniZprava>6570867</puvodniZprava>
+    <kodChyby>1</kodChyby>
+    <chybovyText>Systém nebyl schopen identifikovat požadovanou operaci. V datové zprávě nebyla nalezena žádná hlavní
+        xml příloha, která by názvem odpovídala platné specifikaci.
+    </chybovyText>
+</chyba>

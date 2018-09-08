@@ -1,0 +1,65 @@
+
+Změny XSD z verze 1.0 na verzi 1.1
+==================================
+
+chyba.xsd
+* kód chyby je nově typu string
+
+typ_potvrzeni.xsd
+* odejmut element pro časové razítko
+* element pro informační text rozdělen na jednotlivé dílčí položky (informací může být více než jedna)
+
+typ_smlouva.xsd
+* pole plátce a příjemce jsou nově nepovinná
+* přejmenován element protistrany z "id" na "datovaSchranka"
+* element "protistrana" přejmenován na "smluvniStrana"
+
+typ_spolecne.xsd
+* datový typ tHash změň z base64 na string
+
+vystup_smlouvy.xsd
+* přidán URL odkaz na záznam
+* přidán element s časem vygenerování XML
+
+odpoved_modifikace.xsd
+odpoved_pridani_prilohy.xsd
+odpoved_znepristupneni.xsd
+odpoved_zverejneni.xsd
+* přidán element "casZverejneni"
+
+Změny XSD z verze 1.1 na verzi 1.2
+==================================
+
+vystup_smlouvy.xsd
+* přidán element "casZverejneni"
+ 
+typ_potvrzeni.xsd
+* doplněn atribut maxOccurs="unbounded" pro element informace/text
+
+dump_mesice.xsd
+dump_index.xsd
+* nově přidaná XSD pro práci s open daty
+
+typ_spolecne.xsd
+* nový datový typ tTextNoEmpty s definovanou minimální délkou
+
+typ_smlouva.xsd
+* pro povinná pole smluvniStrana.nazev a predmet použit nový datový typ tTextNoEmpty
+* změna pořadí elemetntů v části smluvniStrana, aby pořadím odpovídaly elementům z části subjekt
+
+typ_zmocneni.xsd
+* oprava preklepu v nazvu elementu zmocnenec
+
+odpoved_zmocneni.xsd
+odpoved_zruseni_zmocneni.xsd
+* do dat odpovědi explicitně přidána i identifikace zmocnitele
+
+operace_pridani_prilohy.xsd
+* zavedena možnost odkázat se nejen přes interní ID smlouvy, ale alternativně i přes ID datové zprávy
+
+Minoritní změny XSD z verze 1.2 na verzi 1.2.1
+==============================================
+
+typ_spolecne.xsd
+* tEmail - povoleny e-mailové adresy i s jednoznakovým názvem domény
+* tDatovaSchranka - povoleny jen znaky z množiny [a-zA-Z0-9]

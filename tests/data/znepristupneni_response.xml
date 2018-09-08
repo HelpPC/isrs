@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odpovedZnepristupneni xmlns="http://portal.gov.cz/rejstriky/ISRS/1.2/">
+    <puvodniZprava>6570868</puvodniZprava>
+    <data>
+        <identifikator>
+            <idSmlouvy>112076</idSmlouvy>
+            <idVerze>125236</idVerze>
+        </identifikator>
+        <odkaz>https://testrs.gov.cz/smlouva/125236</odkaz>
+        <casZverejneni>2018-09-03T20:32:37+02:00</casZverejneni>
+        <smlouva>
+            <subjekt>
+                <datovaSchranka>unhfjvx</datovaSchranka>
+                <nazev>IS Datové schránky</nazev>
+                <ico>00272663</ico>
+                <adresa>Na Jízdárně 3025/12, 70200 Ostrava, CZ</adresa>
+            </subjekt>
+            <smluvniStrana>
+                <nazev>Pokusný subjekt</nazev>
+            </smluvniStrana>
+            <predmet>Smlouva pozměněná</predmet>
+            <datumUzavreni>2018-09-03</datumUzavreni>
+            <hodnotaVcetneDph>650</hodnotaVcetneDph>
+        </smlouva>
+        <prilohy>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>testovaciDokument.pdf</nazevSouboru>
+            </priloha>
+            <priloha>
+                <hash algoritmus="sha256">e8287a2b16380594dd85ab21787bd52bdd08f6b349987c6b38daf6e537773fa3</hash>
+                <nazevSouboru>testovaciDokument2.pdf</nazevSouboru>
+            </priloha>
+        </prilohy>
+    </data>
+    <potvrzeni>
+        <hash algoritmus="sha256">b359b2af15a7936d80ebe6d478d3bbd9b42f0bcdc8b12d6cb431515f6b159ce0</hash>
+        <elektronickaZnacka>
+            Jmxsjbqc4AfNqmw/aEBID366A0zn7NUk9sySByvEwExirZuwspsW3Lw6R83kDil8GjlDSufxA7MaOEIjJ27xM9oFnlO1YtlSxin0/T0FrM9kgENNje7Z7t4XjwTY/VYw6zlUm14jxpMQyHkxU7zkHlnA2t8DN/1YlzUZg5dJOZweh9ni8FPOjv1XMKuIJe1aE6RTEP2j5aD66P/tfvVVwXxbRh9jgFuhWseKZE21V2CF8JTRex77PdQLVUD9lDVJBUSIXw1Ce8KRL+xpHFjPTCZ7mFbf5PRGH/oJq/DNLACPS22t3wJGMnWAcrHJm7P+KVSRstAo2508Sz2q8tqLPA==
+        </elektronickaZnacka>
+    </potvrzeni>
+</odpovedZnepristupneni>
