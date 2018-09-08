@@ -46,13 +46,13 @@ class Attachment
     }
 
     /**
-     * @param mixed $o
-     * @return null
+     * @param mixed $fakeProperty
+     * @return mixed
      * @internal
      */
-    public function setFake($o)
+    public function setFake($fakeProperty)
     {
-        return null;
+        return $fakeProperty;
     }
 
     /**
