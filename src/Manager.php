@@ -20,11 +20,10 @@ use HelpPC\ISRS\Entity\Operation\Modification;
 use HelpPC\ISRS\Entity\Operation\ModificationResponse;
 use HelpPC\ISRS\Entity\Operation\Publication;
 use HelpPC\ISRS\Entity\Operation\PublicationResponse;
-use HelpPC\ISRS\Exception\ErrorResponse;
 use HelpPC\ISRS\Exception\UnknownProcessor;
-use HelpPC\ISRS\Exception\XmlDataMismatch;
 use HelpPC\Serializer\SerializerFactory;
 use JMS\Serializer\Serializer;
+
 
 class Manager
 {
@@ -81,130 +80,130 @@ class Manager
 
     /**
      * @param string $xml
-     * @return Error
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getErrorObject(string $xml): Error
+    public function getErrorObject(string $xml): IResponse
     {
         return $this->fromXml($xml, Error::class);
     }
 
     /**
      * @param string $xml
-     * @return AppendAttachmentResponse
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getAppendAttachmentResponseObject(string $xml): AppendAttachmentResponse
+    public function getAppendAttachmentResponseObject(string $xml): IResponse
     {
         return $this->fromXml($xml, AppendAttachmentResponse::class);
     }
 
     /**
      * @param string $xml
-     * @return AppendAttachment
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getAppendAttachmentObject(string $xml): AppendAttachment
+    public function getAppendAttachmentObject(string $xml): IResponse
     {
         return $this->fromXml($xml, AppendAttachment::class);
     }
 
     /**
      * @param string $xml
-     * @return CancelEmpowermentResponse
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getCancelEmpowermentResponseObject(string $xml): CancelEmpowermentResponse
+    public function getCancelEmpowermentResponseObject(string $xml): IResponse
     {
         return $this->fromXml($xml, CancelEmpowermentResponse::class);
     }
 
     /**
      * @param string $xml
-     * @return CancelEmpowerment
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getCancelEmpowermentObject(string $xml): CancelEmpowerment
+    public function getCancelEmpowermentObject(string $xml): IResponse
     {
         return $this->fromXml($xml, CancelEmpowerment::class);
     }
 
     /**
      * @param string $xml
-     * @return DisclosureResponse
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getDisclosureResponseObject(string $xml): DisclosureResponse
+    public function getDisclosureResponseObject(string $xml): IResponse
     {
         return $this->fromXml($xml, DisclosureResponse::class);
     }
 
     /**
      * @param string $xml
-     * @return Disclosure
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getDisclosureObject(string $xml): Disclosure
+    public function getDisclosureObject(string $xml): IResponse
     {
         return $this->fromXml($xml, Disclosure::class);
     }
 
     /**
      * @param string $xml
-     * @return EmpowermentResponse
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getEmpowermentResponseObject(string $xml): EmpowermentResponse
+    public function getEmpowermentResponseObject(string $xml): IResponse
     {
         return $this->fromXml($xml, EmpowermentResponse::class);
     }
 
     /**
      * @param string $xml
-     * @return Empowerment
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getEmpowermentObject(string $xml): Empowerment
+    public function getEmpowermentObject(string $xml): IResponse
     {
         return $this->fromXml($xml, Empowerment::class);
     }
 
     /**
      * @param string $xml
-     * @return ModificationResponse
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getModificationResponseObject(string $xml): ModificationResponse
+    public function getModificationResponseObject(string $xml): IResponse
     {
         return $this->fromXml($xml, ModificationResponse::class);
     }
 
     /**
      * @param string $xml
-     * @return Modification
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getModificationObject(string $xml): Modification
+    public function getModificationObject(string $xml): IResponse
     {
         return $this->fromXml($xml, Modification::class);
     }
 
     /**
      * @param string $xml
-     * @return PublicationResponse
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getPublicationResponseObject(string $xml): PublicationResponse
+    public function getPublicationResponseObject(string $xml): IResponse
     {
         return $this->fromXml($xml, PublicationResponse::class);
     }
 
     /**
      * @param string $xml
-     * @return Publication
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function getPublicationObject(string $xml): Publication
+    public function getPublicationObject(string $xml): IResponse
     {
         return $this->fromXml($xml, Publication::class);
     }
@@ -212,10 +211,10 @@ class Manager
     /**
      * @param string $obj
      * @param string $objName
-     * @return ISerializable
+     * @return IResponse
      * @throws UnknownProcessor
      */
-    public function fromXml(string $obj, string $objName): ISerializable
+    public function fromXml(string $obj, string $objName): IResponse
     {
         if (in_array(ISerializable::class, class_implements($objName))) {
             return $this->processors[$objName]->fromXml($obj);

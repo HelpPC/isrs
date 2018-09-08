@@ -5,3 +5,24 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://packagist.org/packages/helppc/isrs)
 
 
+## Instalace
+
+### Composer
+
+Pro instalaci balíčku je nutné jej instalovat skrze [composer](https://getcomposer.org/).
+
+```bash
+composer require helppc/isrs
+```
+
+## Pomoc a řešní chyb
+
+V případě že potřebujete poradit, nebo při implementaci Vám třída zobrazuje chybu můžete využít následujících kontaktů.
+Základní pomoc je poskytována zcela zdarma pomocí Issues.
+
+## Odkazy
+- Produkční registr smluv - https://smlouvy.gov.cz
+- Testovací registr smluv - https://testrs.gov.cz/
+
+## Licence
+MIT - https://opensource.org/licenses/MIT
