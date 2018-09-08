@@ -29,3 +29,7 @@ Základní pomoc je poskytována zcela zdarma pomocí Issues.
 
 ## Licence
 MIT - https://opensource.org/licenses/MIT
+
+## Donations
+
+[<img src="http://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Paypal-icon.png" width="120">](https://paypal.me/helppc)

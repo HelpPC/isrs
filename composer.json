@@ -26,6 +26,8 @@
   "require": {
     "php": ">=7.1",
     "ext-xml": "*",
+    "ext-libxml": "*",
+    "ext-dom": "*",
     "doctrine/collections": ">=1.5",
     "helppc/serializer": "^1.0"
   },

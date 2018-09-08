@@ -80,132 +80,158 @@ class Manager
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return Error
      * @throws UnknownProcessor
      */
-    public function getErrorObject(string $xml): ISerializable
+    public function getErrorObject(string $xml): Error
     {
-        return $this->fromXml($xml, Error::class);
+        /** @var Error $response */
+        $response = $this->fromXml($xml, Error::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return AppendAttachmentResponse
      * @throws UnknownProcessor
      */
-    public function getAppendAttachmentResponseObject(string $xml): ISerializable
+    public function getAppendAttachmentResponseObject(string $xml): AppendAttachmentResponse
     {
-        return $this->fromXml($xml, AppendAttachmentResponse::class);
+        /** @var AppendAttachmentResponse $response */
+        $response = $this->fromXml($xml, AppendAttachmentResponse::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return AppendAttachmentResponse
      * @throws UnknownProcessor
      */
-    public function getAppendAttachmentObject(string $xml): ISerializable
+    public function getAppendAttachmentObject(string $xml): AppendAttachmentResponse
     {
-        return $this->fromXml($xml, AppendAttachment::class);
+        /** @var AppendAttachmentResponse $response */
+        $response = $this->fromXml($xml, AppendAttachment::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return CancelEmpowermentResponse
      * @throws UnknownProcessor
      */
-    public function getCancelEmpowermentResponseObject(string $xml): ISerializable
+    public function getCancelEmpowermentResponseObject(string $xml): CancelEmpowermentResponse
     {
-        return $this->fromXml($xml, CancelEmpowermentResponse::class);
+        /** @var CancelEmpowermentResponse $response */
+        $response = $this->fromXml($xml, CancelEmpowermentResponse::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return CancelEmpowerment
      * @throws UnknownProcessor
      */
-    public function getCancelEmpowermentObject(string $xml): ISerializable
+    public function getCancelEmpowermentObject(string $xml): CancelEmpowerment
     {
-        return $this->fromXml($xml, CancelEmpowerment::class);
+        /** @var CancelEmpowerment $response */
+        $response = $this->fromXml($xml, CancelEmpowerment::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return DisclosureResponse
      * @throws UnknownProcessor
      */
-    public function getDisclosureResponseObject(string $xml): ISerializable
+    public function getDisclosureResponseObject(string $xml): DisclosureResponse
     {
-        return $this->fromXml($xml, DisclosureResponse::class);
+        /** @var DisclosureResponse $response */
+        $response = $this->fromXml($xml, DisclosureResponse::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return Disclosure
      * @throws UnknownProcessor
      */
-    public function getDisclosureObject(string $xml): ISerializable
+    public function getDisclosureObject(string $xml): Disclosure
     {
-        return $this->fromXml($xml, Disclosure::class);
+        /** @var Disclosure $response */
+        $response = $this->fromXml($xml, Disclosure::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return EmpowermentResponse
      * @throws UnknownProcessor
      */
-    public function getEmpowermentResponseObject(string $xml): ISerializable
+    public function getEmpowermentResponseObject(string $xml): EmpowermentResponse
     {
-        return $this->fromXml($xml, EmpowermentResponse::class);
+        /** @var EmpowermentResponse $response */
+        $response = $this->fromXml($xml, EmpowermentResponse::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return Empowerment
      * @throws UnknownProcessor
      */
-    public function getEmpowermentObject(string $xml): ISerializable
+    public function getEmpowermentObject(string $xml): Empowerment
     {
-        return $this->fromXml($xml, Empowerment::class);
+        /** @var Empowerment $response */
+        $response = $this->fromXml($xml, Empowerment::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return ModificationResponse
      * @throws UnknownProcessor
      */
-    public function getModificationResponseObject(string $xml): ISerializable
+    public function getModificationResponseObject(string $xml): ModificationResponse
     {
-        return $this->fromXml($xml, ModificationResponse::class);
+        /** @var ModificationResponse $response */
+        $response = $this->fromXml($xml, ModificationResponse::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return Modification
      * @throws UnknownProcessor
      */
-    public function getModificationObject(string $xml): ISerializable
+    public function getModificationObject(string $xml): Modification
     {
-        return $this->fromXml($xml, Modification::class);
+        /** @var Modification $response */
+        $response = $this->fromXml($xml, Modification::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return PublicationResponse
      * @throws UnknownProcessor
      */
-    public function getPublicationResponseObject(string $xml): ISerializable
+    public function getPublicationResponseObject(string $xml): PublicationResponse
     {
-        return $this->fromXml($xml, PublicationResponse::class);
+        /** @var PublicationResponse $response */
+        $response = $this->fromXml($xml, PublicationResponse::class);
+        return $response;
     }
 
     /**
      * @param string $xml
-     * @return ISerializable
+     * @return Publication
      * @throws UnknownProcessor
      */
-    public function getPublicationObject(string $xml): ISerializable
+    public function getPublicationObject(string $xml): Publication
     {
-        return $this->fromXml($xml, Publication::class);
+        /** @var Publication $response */
+        $response = $this->fromXml($xml, Publication::class);
+        return $response;
     }
 
     /**

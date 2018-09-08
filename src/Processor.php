@@ -9,6 +9,7 @@ namespace HelpPC\ISRS;
 
 
 use HelpPC\ISRS\Entity\Error;
+use HelpPC\ISRS\Exception\FileNotFound;
 use HelpPC\ISRS\Exception\XmlDataMismatch;
 use JMS\Serializer\Serializer;
 
@@ -44,6 +45,7 @@ class Processor implements IProcessor
     /**
      * @param string $parameter
      * @return ISerializable
+     * @throws FileNotFound
      * @throws XmlDataMismatch
      */
     public function fromXml(string $parameter): ISerializable
@@ -55,6 +57,7 @@ class Processor implements IProcessor
     /**
      * @param ISerializable $parameter
      * @return string
+     * @throws FileNotFound
      * @throws XmlDataMismatch
      */
     public function toXml(ISerializable $parameter): string
@@ -74,15 +77,20 @@ class Processor implements IProcessor
     /**
      * @param string $data
      * @param string $fileName
-     * @return mixed
+     * @return string
+     * @throws FileNotFound
      * @throws XmlDataMismatch
      */
     protected function validate(string $data, $fileName = 'chyba')
     {
+        $filePath = dirname(__FILE__) . '/../Resources/' . $fileName . '.xsd';
+        if (!file_exists($filePath)) {
+            throw new FileNotFound('File (' . $filePath . ') with XSD not found');
+        }
         $xml = new \DOMDocument();
         $xml->loadXML($data);
         libxml_use_internal_errors(true);
-        $result = $xml->schemaValidate(dirname(__FILE__) . '/../Resources/' . $fileName . '.xsd');
+        $result = $xml->schemaValidate($filePath);
         $allErrors = libxml_get_errors();
         libxml_use_internal_errors(false);
         if (!$result) {
@@ -98,25 +106,25 @@ class Processor implements IProcessor
         return $data;
     }
 
-    function libxml_display_error($error)
+    private function libxml_display_error($error)
     {
-        $return = "<br/>\n";
+        $return = null;
         switch ($error->level) {
             case LIBXML_ERR_WARNING:
-                $return .= "<b>Warning $error->code</b>: ";
+                $return .= "Warning $error->code: ";
                 break;
             case LIBXML_ERR_ERROR:
-                $return .= "<b>Error $error->code</b>: ";
+                $return .= "Error $error->code: ";
                 break;
             case LIBXML_ERR_FATAL:
-                $return .= "<b>Fatal Error $error->code</b>: ";
+                $return .= "Fatal Error $error->code: ";
                 break;
         }
         $return .= trim($error->message);
         if ($error->file) {
-            $return .= " in <b>$error->file</b>";
+            $return .= " in $error->file";
         }
-        $return .= " on line <b>$error->line</b>\n";
+        $return .= " on line #$error->line" . PHP_EOL;
 
         return $return;
     }
