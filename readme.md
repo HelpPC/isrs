@@ -15,6 +15,9 @@ Pro instalaci balíčku je nutné jej instalovat skrze [composer](https://getcom
 composer require helppc/isrs
 ```
 
+## Popis
+Tato třída slouží pouze k vytvoření XML souboru pro zaslání na MVČR a k rozparsování odpovědi od ISRS. K prodení požadované operace je potřeba XML soubory typu IRequest zaslat prostřednictvím Informačnícho systému datových scrhánek [ISDS](https://mojedatovaschranka.cz) nebo [ISDS test](https://czebox.cz) 
+
 ## Pomoc a řešní chyb
 
 V případě že potřebujete poradit, nebo při implementaci Vám třída zobrazuje chybu můžete využít následujících kontaktů.
