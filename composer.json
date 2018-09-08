@@ -1,13 +1,22 @@
 {
   "name": "helppc/isrs",
-  "homepage": "http://tirus.cz",
-  "description": "",
+  "description": "PHP knihovna pro práci s XML strukturou pro komunikaci s registrem smluv Ministerstva vnitra České republiky",
+  "homepage": "http://helppc.cz",
+  "license": "MIT",
+  "time": "2018-09-07",
   "keywords": [
+    "registr",
+    "smlouvy",
     "publish",
     "czech",
-    "isrs"
+    "ISRS"
   ],
   "type": "library",
+  "support": {
+    "email": "info@tirus.cz",
+    "issues": "https://github.com/HelpPC/isrs/issues",
+    "source": "https://github.com/HelpPC/isrs"
+  },
   "authors": [
     {
       "name": "Tomas Kulhanek",
@@ -18,7 +27,7 @@
     "php": ">=7.0",
     "ext-xml": "*",
     "doctrine/collections": ">=1.5",
-    "helppc/serializer": ">=1.0.0"
+    "helppc/serializer": "^1.0"
   },
   "autoload": {
     "psr-4": {

@@ -53,11 +53,11 @@ class Processor implements IProcessor
     }
 
     /**
-     * @param $parameter
+     * @param ISerializable $parameter
      * @return string
      * @throws XmlDataMismatch
      */
-    public function toXml($parameter): string
+    public function toXml(ISerializable $parameter): string
     {
         return $this->validate($this->getSerializer()->serialize($parameter, 'xml'), $this->xsdName);
     }
@@ -72,12 +72,12 @@ class Processor implements IProcessor
     }
 
     /**
-     * @param $data
+     * @param string $data
      * @param string $fileName
      * @return mixed
      * @throws XmlDataMismatch
      */
-    protected function validate($data, $fileName = 'chyba')
+    protected function validate(string $data, $fileName = 'chyba')
     {
         $xml = new \DOMDocument();
         $xml->loadXML($data);

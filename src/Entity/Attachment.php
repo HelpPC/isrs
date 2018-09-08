@@ -46,7 +46,7 @@ class Attachment
     }
 
     /**
-     * @param $o
+     * @param mixed $o
      * @return null
      * @internal
      */

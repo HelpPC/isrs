@@ -17,9 +17,13 @@ class ErrorResponse extends \Exception
     /** @var Error */
     private $errorEntity;
 
+    /**
+     * ErrorResponse constructor.
+     * @param Error $error
+     */
     public function __construct(Error $error)
     {
         $this->errorEntity = $error;
-        parent::__construct($error->getErrorMessage(), $error->getErrorCode());
+        parent::__construct($error->getErrorMessage(), intval($error->getErrorCode()));
     }
 }

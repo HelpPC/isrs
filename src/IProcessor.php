@@ -27,10 +27,10 @@ interface IProcessor
     public function fromXml(string $parameter);
 
     /**
-     * @param $parameter
+     * @param ISerializable $parameter
      * @return string
      * @throws XmlDataMismatch
      */
-    public function toXml($parameter): string;
+    public function toXml(ISerializable $parameter): string;
 
 }
