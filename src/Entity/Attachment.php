@@ -7,8 +7,10 @@
 
 namespace HelpPC\ISRS\Entity;
 
-use HelpPC\Serializer\Utils\SplFileInfo;
+
 use JMS\Serializer\Annotation as Serializer;
+use HelpPC\Serializer\Utils\SplFileInfo;
+
 
 /**
  * Class Attachment
@@ -30,7 +32,7 @@ class Attachment
 
     /**
      * @var SplFileInfo
-     * @Serializer\Type("string")
+     * @Serializer\Type("base64File")
      * @Serializer\SkipWhenEmpty()
      * @Serializer\Accessor(getter="getFake", setter="setFake")
      */

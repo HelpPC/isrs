@@ -29,7 +29,7 @@
     "ext-libxml": "*",
     "ext-dom": "*",
     "doctrine/collections": ">=1.5",
-    "helppc/serializer": "^1.0"
+    "helppc/serializer": "^1.1"
   },
   "autoload": {
     "psr-4": {
